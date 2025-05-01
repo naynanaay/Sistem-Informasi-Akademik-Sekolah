@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Siswa - SMK Hang Tuah 1 Jakarta</title>
+  <link rel="stylesheet" href="../css/dashboardadmin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/data-siswa.css">
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <i class="fas fa-user-shield fa-3x"></i>
+        <h3>Admin</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><i class="fas fa-home"></i> <a href="dashboard-admin.html">Dashboard</a></li>
+          <li><i class="fas fa-chalkboard-teacher"></i> <a href="data-guru.html">Data Guru</a></li>
+          <li><i class="fas fa-users"></i> <a href="data-siswa.html">Data Siswa</a></li>
+          <li><i class="fas fa-layer-group"></i> <a href="data-jurusan.html">Jurusan</a></li>
+          <li><i class="fas fa-calendar-alt"></i> <a href="jadwal-pelajaran.html">Jadwal</a></li>
+          <li><i class="fas fa-bullhorn"></i> <a href="pengumuman.html">Pengumuman</a></li>
+          <li><i class="fas fa-user-cog"></i> <a href="profil-admin.html">Profil</a></li>
+          <li><i class="fas fa-sign-out-alt"></i> <a href="logout-admin.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+        <section class="siswa">
+          <h2>DATA SISWA</h2>
+          <label>Filter Jurusan: 
+            <select id="filter">
+              <option value="all">Semua</option>
+              <option value="PPLG">PPLG</option>
+              <option value="MP">MP</option>
+            </select>
+          </label>
+          <table>
+            <thead>
+              <tr>
+                <th>NISN</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+              <!-- data siswa muncul disini -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+  <script>
+    const dataSiswa = [
+      { nisn: "12345", nama: "Ahmad Fikri", kelas: "XI PPLG 1", jurusan: "PPLG" },
+      { nisn: "12346", nama: "Siti Rohmah", kelas: "XI MP 2", jurusan: "MP" }
+    ];
+
+    const tbody = document.getElementById("data");
+    const filter = document.getElementById("filter");
+
+    function tampilkanSiswa(jurusan) {
+      tbody.innerHTML = "";
+      dataSiswa.forEach(s => {
+        if (jurusan === "all" || s.jurusan === jurusan) {
+          tbody.innerHTML += `
+            <tr>
+              <td>${s.nisn}</td>
+              <td>${s.nama}</td>
+              <td>${s.kelas}</td>
+              <td>${s.jurusan}</td>
+            </tr>`;
+        }
+      });
+    }
+
+    filter.onchange = () => tampilkanSiswa(filter.value);
+    tampilkanSiswa("all"); // tampil semua awalnya
+  </script>
+</body>
+
+</html>

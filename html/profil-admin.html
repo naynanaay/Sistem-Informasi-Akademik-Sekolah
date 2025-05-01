@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profil - Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/dashboardadmin.css" />
+    <link rel="stylesheet" href="../css/profil-admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <i class="fas fa-user-shield fa-3x"></i>
+                <h3>Admin</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="dashboard-admin.html">Dashboard</a></li>
+                    <li><i class="fas fa-chalkboard-teacher"></i><a href="data-guru.html">Data Guru</a></li>
+                    <li><i class="fas fa-users"></i><a href="data-siswa.html">Data Siswa</a></li>
+                    <li><i class="fas fa-layer-group"></i><a href="data-jurusan.html">Jurusan</a></li>
+                    <li><i class="fas fa-calendar-alt"></i><a href="jadwal-pelajaran.html">Jadwal</a></li>
+                    <li><i class="fas fa-bullhorn"></i><a href="pengumuman.html">Pengumuman</a></li>
+                    <li><i class="fas fa-user-cog"></i><a href="profil-admin.html">Profil</a></li>
+                    <li><i class="fas fa-sign-out-alt"></i><a href="logout-admin.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="profil-container">
+                <h2>Profil Pengguna</h2>
+
+                <div class="profil-item">
+                    <span>Nama:</span>
+                    <span class="text-value">Admin Sekolah</span>
+                    <input type="text" class="input-edit" value="Admin Sekolah">
+                </div>
+
+                <div class="profil-item">
+                    <span>Role:</span>
+                    <span class="text-value">Admin</span>
+                    <input type="text" class="input-edit" value="Admin" disabled>
+                </div>
+
+                <div class="profil-item">
+                    <span>Email:</span>
+                    <span class="text-value">admin@sekolah.id</span>
+                    <input type="email" class="input-edit" value="admin@sekolah.id">
+                </div>
+
+                <div class="profil-item">
+                    <span>Telepon:</span>
+                    <span class="text-value">0812-1234-5678</span>
+                    <input type="text" class="input-edit" value="0812-1234-5678">
+                </div>
+
+                <button class="btn-edit" id="editBtn">Edit Profil</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const editBtn = document.getElementById("editBtn");
+        let isEditing = false;
+
+        editBtn.addEventListener("click", () => {
+            const items = document.querySelectorAll(".profil-item");
+            isEditing = !isEditing;
+
+            items.forEach(item => {
+                if (isEditing) {
+                    item.classList.add("editing");
+                } else {
+                    const input = item.querySelector(".input-edit");
+                    const span = item.querySelector(".text-value");
+                    span.textContent = input.value;
+                    item.classList.remove("editing");
+                }
+            });
+
+            editBtn.textContent = isEditing ? "Simpan" : "Edit Profil";
+        });
+    </script>
+</body>
+
+</html>

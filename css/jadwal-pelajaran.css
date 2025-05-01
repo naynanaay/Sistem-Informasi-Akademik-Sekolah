@@ -1,0 +1,47 @@
+ /* TABEL - tetap pakai gaya sebelumnya */
+ .jadwal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .jadwal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .pilih-kelas {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .pilih-kelas select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background: #f7f7f7;
+    font-weight: 600;
+  }
+
+  tr:hover {
+    background: #f1f1f1;
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profil - Siswa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/dashboardguru.css" />
+    <link rel="stylesheet" href="../css/profil-siswa.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <i class="fas fa-user-circle fa-3x"></i>
+                <h3>Nayyara</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="dashboard-siswa.html">Dashboard</a> </li>
+                    <li><i class="fas fa-pen"></i><a href="lihat-nilai.html">Lihat Nilai</a> </li>
+                    <li><i class="fas fa-calendar-alt"></i><a href="jadwal-pelajaran2.html">Jadwal</a> </li>
+                    <li><i class="fas fa-bullhorn"></i><a href="pengumuman1.html">Pengumuman</a> </li>
+                    <li><i class="fas fa-user-cog"></i><a href="profil-siswa.html">Profil</a> </li>
+                    <li><i class="fas fa-sign-out-alt"></i><a href="logout-siswa.html">Logout</a> </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="profil-container">
+                <h2>Profil Pengguna</h2>
+
+                <div class="profil-item">
+                    <span>Nama:</span>
+                    <span class="text-value">Nayyara</span>
+                    <input type="text" class="input-edit" value="Nayyara">
+                </div>
+
+                <div class="profil-item">
+                    <span>Role:</span>
+                    <span class="text-value">Siswa</span>
+                    <input type="text" class="input-edit" value="Siswa" disabled>
+                </div>
+
+                <div class="profil-item">
+                    <span>Email:</span>
+                    <span class="text-value">naynanaay01@gmail.com</span>
+                    <input type="email" class="input-edit" value="admin@sekolah.id">
+                </div>
+
+                <div class="profil-item">
+                    <span>Telepon:</span>
+                    <span class="text-value">0812-1234-5667</span>
+                    <input type="text" class="input-edit" value="0812-1234-5667">
+                </div>
+
+                <button class="btn-edit" id="editBtn">Edit Profil</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const editBtn = document.getElementById("editBtn");
+        let isEditing = false;
+
+        editBtn.addEventListener("click", () => {
+            const items = document.querySelectorAll(".profil-item");
+            isEditing = !isEditing;
+
+            items.forEach(item => {
+                if (isEditing) {
+                    item.classList.add("editing");
+                } else {
+                    const input = item.querySelector(".input-edit");
+                    const span = item.querySelector(".text-value");
+                    span.textContent = input.value;
+                    item.classList.remove("editing");
+                }
+            });
+
+            editBtn.textContent = isEditing ? "Simpan" : "Edit Profil";
+        });
+    </script>
+</body>
+
+</html>

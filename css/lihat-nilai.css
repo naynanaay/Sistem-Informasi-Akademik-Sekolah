@@ -1,0 +1,22 @@
+.nilai-container {
+    width: 60%;
+    margin: 40px auto;
+    border: 2px dashed #999;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #999;
+    text-align: center;
+  }
+  td.nilai {
+    color: #e69500;
+    font-weight: bold;
+  }

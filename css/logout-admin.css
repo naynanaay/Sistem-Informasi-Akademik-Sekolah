@@ -1,0 +1,29 @@
+body {
+    background-color: #f9f9f9;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .ascii-logout {
+    border: 2px dashed #4caf50;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    color: #333;
+    line-height: 1.6;
+    white-space: pre;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .ascii-logout a {
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .ascii-logout a:hover {
+    text-decoration: underline;
+  }

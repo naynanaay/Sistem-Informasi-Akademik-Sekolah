@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Guru - SMK Hang Tuah 1 Jakarta</title>
+  <link rel="stylesheet" href="../css/dashboardadmin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/data-guru.css">
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <i class="fas fa-user-shield fa-3x"></i>
+        <h3>Admin</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><i class="fas fa-home"></i> <a href="dashboard-admin.html">Dashboard</a></li>
+          <li><i class="fas fa-chalkboard-teacher"></i> <a href="data-guru.html">Data Guru</a></li>
+          <li><i class="fas fa-users"></i> <a href="data-siswa.html">Data Siswa</a></li>
+          <li><i class="fas fa-layer-group"></i> <a href="data-jurusan.html">Jurusan</a></li>
+          <li><i class="fas fa-calendar-alt"></i> <a href="jadwal-pelajaran.html">Jadwal</a></li>
+          <li><i class="fas fa-bullhorn"></i> <a href="pengumuman.html">Pengumuman</a></li>
+          <li><i class="fas fa-user-cog"></i> <a href="profil-admin.html">Profil</a></li>
+          <li><i class="fas fa-sign-out-alt"></i> <a href="logout-admin.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="guru">
+        <h2>Data Guru</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>NIP</th>
+              <th>Nama</th>
+              <th>Mata Pelajaran</th>
+            </tr>
+          </thead>
+          <tbody id="guru-table-body">
+            <!-- Data guru akan ditampilkan di sini -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+    const guruList = [
+      { nip: "1989XXXX", nama: "Bu Lestari", mapel: "Akuntansi Dasar" },
+      { nip: "1990XXXX", nama: "Pak Ahmad", mapel: "Aplikasi Perkantoran" },
+      { nip: "1988XXXX", nama: "Bu Winda", mapel: "Manajemen Pemasaran" },
+      { nip: "1992XXXX", nama: "Pak Yoga", mapel: "Desain Grafis" },
+      { nip: "1991XXXX", nama: "Bu Nia", mapel: "Pemrograman Dasar" },
+    ];
+
+    const tbody = document.getElementById("guru-table-body");
+
+    guruList.forEach(guru => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${guru.nip}</td>
+        <td>${guru.nama}</td>
+        <td>${guru.mapel}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  </script>
+</body>
+
+</html>

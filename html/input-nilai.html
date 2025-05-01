@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Input Nilai</title>
+  <link rel="stylesheet" href="../css/dashboardguru.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/input-nilai.css">
+</head>
+<body>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <i class="fas fa-user-circle fa-3x"></i>
+          <h3>Bu Farah</h3>
+        </div>
+        <nav>
+          <ul>
+            <li><i class="fas fa-home"></i> <a href="dashboard-guru.html">Dashboard</a></li>
+            <li><i class="fas fa-users"></i> <a href="data-siswa.html">Data Siswa</a></li>
+            <li><i class="fas fa-calendar-alt"></i> <a href="jadwal-pelajaran1.html">Jadwal</a></li>
+            <li><i class="fas fa-pen"></i> <a href="input-nilai.html">Input Nilai</a> </li>
+            <li><i class="fas fa-user-cog"></i> <a href="profil-guru.html">Profil</a></li>
+            <li><i class="fas fa-sign-out-alt"></i><a href="logout.html">Logout</a> </li>
+          </ul>
+        </nav>
+      </aside>
+
+  <div class="input-nilai">
+    <h3>INPUT NILAI</h3>
+    <p>
+      Pilih Kelas:
+      <select id="kelas">
+        <option>XI PPLG 1</option>
+        <option>XI Akuntansi</option>
+        <option>XI DKV</option>
+      </select>
+    </p>
+    <p>
+      Pilih Mapel:
+      <select id="mapel">
+        <option>Pemrograman Dasar</option>
+        <option>Dasar Akuntansi</option>
+        <option>Desain Grafis</option>
+      </select>
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Siswa</th>
+          <th>Tugas</th>
+          <th>UTS</th>
+          <th>UAS</th>
+        </tr>
+      </thead>
+      <tbody id="daftar-siswa">
+        <tr>
+          <td>Ahmad Fikri</td>
+          <td><input type="number" min="0" max="100" value="80"></td>
+          <td><input type="number" min="0" max="100" value="85"></td>
+          <td><input type="number" min="0" max="100" value="88"></td>
+        </tr>
+        <tr>
+          <td>Salsabila Noor</td>
+          <td><input type="number" min="0" max="100"></td>
+          <td><input type="number" min="0" max="100"></td>
+          <td><input type="number" min="0" max="100"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="simpanNilai()">[SIMPAN]</button>
+  </div>
+
+  <script>
+    function simpanNilai() {
+      alert("Nilai berhasil disimpan (simulasi) 💾");
+    }
+  </script>
+</body>
+</html>

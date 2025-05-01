@@ -1,0 +1,87 @@
+/* Mengatur container utama */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+}
+
+/* Container profil */
+.profil-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    margin: 0 auto;
+    /* Pusatkan container */
+}
+
+/* Judul profil */
+.profil-container h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    text-align: center;
+    /* Pusatkan teks */
+}
+
+/* Item profil */
+.profil-item {
+    margin: 15px 0;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Label profil */
+.profil-item span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Nilai teks profil */
+.text-value {
+    color: #333;
+}
+
+/* Input edit */
+.input-edit {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: none;
+    /* Sembunyikan input secara default */
+    width: 100%;
+}
+
+/* Saat mode edit */
+.profil-item.editing .input-edit {
+    display: inline-block;
+    /* Tampilkan input */
+}
+
+.profil-item.editing .text-value {
+    display: none;
+    /* Sembunyikan teks saat input aktif */
+}
+
+/* Tombol edit */
+.btn-edit {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    /* Lebar penuh */
+}
+
+.btn-edit:hover {
+    background-color: #1a252f;
+}
