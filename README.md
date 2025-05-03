@@ -66,5 +66,8 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
     │   ├── sarana-sekolah.html
     │   └── visi-misi.html
     │
+    ├── 📁 js
+    │   └── login.js
+    │   
     └── 📄 Readme.md
 
