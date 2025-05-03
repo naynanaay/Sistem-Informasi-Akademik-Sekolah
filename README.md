@@ -10,61 +10,61 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
 - Pengumuman penting sekolah
 
 # 📂Struktur Folder Proyek Web Sistem Informasi Akademik
-├── 📁 assets
-│   ├── desktop.ini
-│   ├── Logo Sekolah.png
-│   └── sekolah1.jpg
-│
-├── 📁 css
-│   ├── dashboardadmin.css
-│   ├── dashboardguru.css
-│   ├── data-guru.css
-│   ├── data-jurusan.css
-│   ├── data-siswa.css
-│   ├── data-siswa1.css
-│   ├── index.css
-│   ├── input-nilai.css
-│   ├── jadwal-pelajaran.css
-│   ├── jadwal-pelajaran1.css
-│   ├── jadwal-pelajaran2.css
-│   ├── lihat-nilai.css
-│   ├── login.css
-│   ├── logout-admin.css
-│   ├── logout-guru.css
-│   ├── logout-siswa.css
-│   ├── pengumuman.css
-│   ├── pengumuman1.css
-│   ├── profil-admin.css
-│   ├── profil-guru.css
-│   └── profil-siswa.css
-│
-├── 📁 html
-│   ├── dashboard-admin.html
-│   ├── dashboard-guru.html
-│   ├── dashboard-siswa.html
-│   ├── data-guru.html
-│   ├── data-jurusan.html
-│   ├── data-siswa.html
-│   ├── data-siswa1.html
-│   ├── index.html
-│   ├── input-nilai.html
-│   ├── jadwal-pelajaran.html
-│   ├── jadwal-pelajaran1.html
-│   ├── jadwal-pelajaran2.html
-│   ├── lihat-nilai.html
-│   ├── loading-page.html
-│   ├── login.html
-│   ├── logout-admin.html
-│   ├── logout-guru.html
-│   ├── logout-siswa.html
-│   ├── pengumuman.html
-│   ├── pengumuman1.html
-│   ├── profil-admin.html
-│   ├── profil-guru.html
-│   ├── profil-siswa.html
-│   ├── program-keahlian.html
-│   ├── sarana-sekolah.html
-│   └── visi-misi.html
-│
-└── 📄 Readme.md
+    ├── 📁 assets
+    │   ├── desktop.ini
+    │   ├── Logo Sekolah.png
+    │   └── sekolah1.jpg
+    │
+    ├── 📁 css
+    │   ├── dashboardadmin.css
+    │   ├── dashboardguru.css
+    │   ├── data-guru.css
+    │   ├── data-jurusan.css
+    │   ├── data-siswa.css
+    │   ├── data-siswa1.css
+    │   ├── index.css
+    │   ├── input-nilai.css
+    │   ├── jadwal-pelajaran.css
+    │   ├── jadwal-pelajaran1.css
+    │   ├── jadwal-pelajaran2.css
+    │   ├── lihat-nilai.css
+    │   ├── login.css
+    │   ├── logout-admin.css
+    │   ├── logout-guru.css
+    │   ├── logout-siswa.css
+    │   ├── pengumuman.css
+    │   ├── pengumuman1.css
+    │   ├── profil-admin.css
+    │   ├── profil-guru.css
+    │   └── profil-siswa.css
+    │
+    ├── 📁 html
+    │   ├── dashboard-admin.html
+    │   ├── dashboard-guru.html
+    │   ├── dashboard-siswa.html
+    │   ├── data-guru.html
+    │   ├── data-jurusan.html
+    │   ├── data-siswa.html
+    │   ├── data-siswa1.html
+    │   ├── index.html
+    │   ├── input-nilai.html
+    │   ├── jadwal-pelajaran.html
+    │   ├── jadwal-pelajaran1.html
+    │   ├── jadwal-pelajaran2.html
+    │   ├── lihat-nilai.html
+    │   ├── loading-page.html
+    │   ├── login.html
+    │   ├── logout-admin.html
+    │   ├── logout-guru.html
+    │   ├── logout-siswa.html
+    │   ├── pengumuman.html
+    │   ├── pengumuman1.html
+    │   ├── profil-admin.html
+    │   ├── profil-guru.html
+    │   ├── profil-siswa.html
+    │   ├── program-keahlian.html
+    │   ├── sarana-sekolah.html
+    │   └── visi-misi.html
+    │
+    └── 📄 Readme.md
 
