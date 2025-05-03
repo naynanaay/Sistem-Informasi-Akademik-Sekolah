@@ -1,51 +1,70 @@
 # Sistem-Informasi-Akademik-Sekolah
 Website ini adalah proyek sistem informasi sekolah berbasis web statis sebagai contoh untuk simulasi USK.
+Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas akademik di SMK Hang Tuah 1 Jakarta.
 
-Aplikasi berbasis web adalah digunakan untuk membantu mengelola seluruh aktivitas akademik di SMK Hang Tuah 1 Jakarta.
+# 📌 Fitur Akademik yang Dikelola:
+- Pencatatan data siswa
+- Pencatatan data guru
+- Jadwal pelajaran
+- Input dan lihat nilai
+- Pengumuman penting sekolah
 
-Aktivitas akademik di sekolah ini melibatkan:
-- Proses pencatatan data siswa
-- Proses pencatatan data guru 
-- Jadwal pelajaran 
-- Nilai 
-- Pengumuman penting dari sekolah
+# 📂Struktur Folder Proyek Web Sistem Informasi Akademik
+├── 📁 assets
+│   ├── desktop.ini
+│   ├── Logo Sekolah.png
+│   └── sekolah1.jpg
+│
+├── 📁 css
+│   ├── dashboardadmin.css
+│   ├── dashboardguru.css
+│   ├── data-guru.css
+│   ├── data-jurusan.css
+│   ├── data-siswa.css
+│   ├── data-siswa1.css
+│   ├── index.css
+│   ├── input-nilai.css
+│   ├── jadwal-pelajaran.css
+│   ├── jadwal-pelajaran1.css
+│   ├── jadwal-pelajaran2.css
+│   ├── lihat-nilai.css
+│   ├── login.css
+│   ├── logout-admin.css
+│   ├── logout-guru.css
+│   ├── logout-siswa.css
+│   ├── pengumuman.css
+│   ├── pengumuman1.css
+│   ├── profil-admin.css
+│   ├── profil-guru.css
+│   └── profil-siswa.css
+│
+├── 📁 html
+│   ├── dashboard-admin.html
+│   ├── dashboard-guru.html
+│   ├── dashboard-siswa.html
+│   ├── data-guru.html
+│   ├── data-jurusan.html
+│   ├── data-siswa.html
+│   ├── data-siswa1.html
+│   ├── index.html
+│   ├── input-nilai.html
+│   ├── jadwal-pelajaran.html
+│   ├── jadwal-pelajaran1.html
+│   ├── jadwal-pelajaran2.html
+│   ├── lihat-nilai.html
+│   ├── loading-page.html
+│   ├── login.html
+│   ├── logout-admin.html
+│   ├── logout-guru.html
+│   ├── logout-siswa.html
+│   ├── pengumuman.html
+│   ├── pengumuman1.html
+│   ├── profil-admin.html
+│   ├── profil-guru.html
+│   ├── profil-siswa.html
+│   ├── program-keahlian.html
+│   ├── sarana-sekolah.html
+│   └── visi-misi.html
+│
+└── 📄 Readme.md
 
-Berikut struktur halaman dan cara menjalankannya navigasi menu "Web Sistem Informasi Akademik SMK Hang Tuah 1 Jakarta":
-
-A. Landing Page (Public):
-  Pertama, kalian akan diarahkan ke halaman landing page yang berisi konten ucapan "Selamat Datang di Sistem Informasi Akademik" beserta menu dari yang dimunculkan sebagai berikut:  
-• Home
-• Visi & Misi SMK Hang Tuah 1 Jakarta
-• Program Keahlian 
-• Sarana Pembelajaran
-• Prestasi
-• Login (button ke login.html sesuai role kalian sebagai admin, guru, atau siswa SMK Hang Tuah 1 Jakarta)
-
-B. Navigasi Role-based Setelah Login
-  Kedua, setelah login sesuai role kalian sebagai admin, guru, atau siswa SMK Hang Tuah 1 Jakarta, kalian akan diarahkan ke dashboard masing-masing role yang tertera di bawah ini:
-
-Admin:
-• Dashboard
-• Data Siswa
-• Data Guru
-• Data Jurusan
-• Jadwal
-• Pengumuman
-• Profil
-• Logout
-
-Guru:
-• Dashboard
-• Input Nilai
-• Jadwal
-• Pengumuman
-• Profil
-• Logout
-
-Siswa:
-• Dashboard
-• Lihat Nilai
-• Jadwal
-• Pengumuman
-• Profil
-• Logout
