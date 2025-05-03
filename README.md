@@ -11,7 +11,6 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
 
 # 📂Struktur Folder Proyek Web Sistem Informasi Akademik
     ├── 📁 assets
-    │   ├── desktop.ini
     │   ├── Logo Sekolah.png
     │   └── sekolah1.jpg
     │
