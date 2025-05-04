@@ -3,11 +3,12 @@ Website ini adalah proyek sistem informasi sekolah berbasis web statis sebagai c
 Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas akademik di SMK Hang Tuah 1 Jakarta.
 
 # 📌 Fitur Akademik yang Dikelola:
-- Pencatatan data siswa
-- Pencatatan data guru
+- Login multi-level (Admin, Guru, Siswa)
+- Pencatatan data siswa dan guru
 - Jadwal pelajaran
 - Input dan lihat nilai
 - Pengumuman penting sekolah
+- Pengaturan dan profil pengguna
 
 # 📂Struktur Folder Proyek Web Sistem Informasi Akademik
     ├── 📁 assets
@@ -70,3 +71,11 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
     │   
     └── 📄 Readme.md
 
+# 🛠️ Teknologi yang Digunakan
+    HTML, CSS (Native), JavaScript (Native)
+
+# 🔐 Login Demo
+    Role    Username	Password
+    Admin	admin123	admin123
+    Guru	guru123	    guru123
+    Siswa	siswa123	siswa123
