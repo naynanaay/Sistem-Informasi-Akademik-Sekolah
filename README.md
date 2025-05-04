@@ -1,4 +1,4 @@
-# Sistem-Informasi-Akademik-Sekolah
+# 🏫 Sistem-Informasi-Akademik-Sekolah
 Website ini adalah proyek sistem informasi sekolah berbasis web statis sebagai contoh untuk simulasi USK.
 Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas akademik di SMK Hang Tuah 1 Jakarta.
 
@@ -10,7 +10,7 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
 - Pengumuman penting sekolah
 - Pengaturan dan profil pengguna
 
-# 📂Struktur Folder Proyek Web Sistem Informasi Akademik
+# 📂 Struktur Folder Proyek Web Sistem Informasi Akademik Sekolah
     ├── 📁 assets
     │   ├── Logo Sekolah.png
     │   └── sekolah1.jpg
@@ -72,10 +72,12 @@ Aplikasi berbasis web ini dirancang untuk membantu pengelolaan seluruh aktivitas
     └── 📄 Readme.md
 
 # 🛠️ Teknologi yang Digunakan
-    HTML, CSS (Native), JavaScript (Native)
+    - HTML, CSS (Native), JavaScript (Native)
 
-# 🔐 Login Demo
-    Role    Username	Password
-    Admin	admin123	admin123
-    Guru	guru123	    guru123
-    Siswa	siswa123	siswa123
+## 🔐 Login Demo
+
+| Role  | Username  | Password  |
+| :---- | :-------: | --------: |
+| Admin | admin123  | admin123  |
+| Guru  | guru123   | guru123   |
+| Siswa | siswa123  | siswa123  |
